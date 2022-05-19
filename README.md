@@ -23,8 +23,9 @@ new_parent = {
     'level': 0
 }
 
-# add new heading to yaml
-yaml_json['parents'].append(new_parent)
+yaml_json['parents'].append(new_parent)  # add new heading to yaml
+
+Yaml.set_data(yaml_json)  # pass the changes to Yaml
 
 new_yaml = Yaml.dump()  # get the changed yaml text
 ```
