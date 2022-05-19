@@ -1,5 +1,5 @@
 # YamlParse
-YamlParse is an alternative to the normal taml parsers as it keeps all symbols and characters.
+YamlParse is an alternative to the normal yaml parsers as it keeps all symbols and characters.
 
 The reason for creating this is to build universal a GUI yaml editor mainly for <a href="https://github.com/home-assistant/core" target="_blank">homeassistant</a>
 
