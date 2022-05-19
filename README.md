@@ -5,7 +5,7 @@ The reason for creating this is to build universal a GUI yaml editor mainly for 
 
 ## Usage Example
 
-```
+```python
 from parse import yamlParse
 
 my_yaml = "router:\n  host: 192.168.1.1"  # declare yaml text
