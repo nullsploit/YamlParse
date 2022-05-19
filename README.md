@@ -6,15 +6,15 @@ The reason for creating this is to build universal a GUI yaml editor mainly for 
 ## Usage Example
 
 ```
-from parse import YamlParse
+from parse import yamlParse
 
-my_yaml = "[YAML]"  # declare yaml text
-Yaml = YamlParse(my_yaml)  # parse the yaml text
+my_yaml = "router:\n  host: 192.168.1.1"  # declare yaml text
+Yaml = yamlParse(my_yaml)  # parse the yaml text
 yaml_json = Yaml.data  
 
 # change yaml_json as you want
 new_parent = {
-    'name': "dummy_heading",
+    'name': "dummy_heading:",
     'children': [{
         'name': "child_1: steve",
         'children': [],
@@ -28,5 +28,7 @@ yaml_json['parents'].append(new_parent)  # add new heading to yaml
 Yaml.set_data(yaml_json)  # pass the changes to Yaml
 
 new_yaml = Yaml.dump()  # get the changed yaml text
+
+print(new_yaml)
 ```
 
