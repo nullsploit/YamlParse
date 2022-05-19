@@ -8,7 +8,7 @@ The reason for creating this is to build universal a GUI yaml editor mainly for 
 ```
 from parse import YamlParse
 
-my_yaml = [YAML]  # declare yaml text
+my_yaml = "[YAML]"  # declare yaml text
 Yaml = YamlParse(my_yaml)  # parse the yaml text
 yaml_json = Yaml.data  
 
